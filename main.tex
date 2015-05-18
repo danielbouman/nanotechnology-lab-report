@@ -1,0 +1,21 @@
+\input{preamble_final.tex}
+
+\begin{document}
+    \maketitle
+    \thispagestyle{fancy}
+    
+    \input{abstract.tex}
+    
+    \begin{multicols}{2}
+        \input{Introduction.tex}
+
+        \input{cnm.tex}
+        \input{results.tex}
+        \input{Conclusion.tex}
+
+	    \bibliographystyle{unsrt}
+        \bibliography{library}{}
+        \appendix
+        \input{Appendices.tex}
+    \end{multicols}
+\end{document}	
