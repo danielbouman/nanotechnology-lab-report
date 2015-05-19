@@ -7,20 +7,16 @@
 \linespread{1.05} % Palatino needs more space between lines
 \usepackage{microtype}
 \usepackage[UKenglish]{babel} 
-%\usepackage{graphicx}
-\usepackage{float}
 \usepackage{upgreek}
-\usepackage{cite}
 \usepackage{lettrine}
-\usepackage[super]{nth}
-\usepackage{upgreek}
+% \usepackage{upgreek}
 \makeatletter
-\newcommand*{\centerfloat}{%
-  \parindent \z@
-  \leftskip \z@ \@plus 1fil \@minus \textwidth
-  \rightskip\leftskip
-  \parfillskip \z@skip}
-\makeatother
+
+% Typography
+\usepackage[super]{nth}
+
+% Citations
+\usepackage{cite}
 
 % Date
 \usepackage{datetime}
@@ -35,9 +31,16 @@
 % Figures
 \usepackage{epstopdf}
 \usepackage{subcaption}
+\usepackage{float}
+\newcommand*{\centerfloat}{%
+  \parindent \z@
+  \leftskip \z@ \@plus 1fil \@minus \textwidth
+  \rightskip\leftskip
+  \parfillskip \z@skip}
+\makeatother
 %\usepackage[demo]{graphicx}
-%\usepackage{tikz} % TikZ and PGF
-%\usetikzlibrary{calc,arrows,decorations.pathmorphing,intersections}
+\usepackage{tikz} % TikZ and PGF
+% \usetikzlibrary{calc,arrows,decorations.pathmorphing,intersections}
 
 % PDF options
 \usepackage[pdfstartview=FitH,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,linktocpage=all]{hyperref}

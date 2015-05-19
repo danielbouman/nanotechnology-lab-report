@@ -1,0 +1,17 @@
+% !TeX root = main.tex
+\begin{tikzpicture}
+    % Cross links
+    \begin{scope}[line width=3]
+        \draw (5,.65) -- (5.5,1.5);
+        \draw (2.5,2.05) -- (2.1,4.15);
+    \end{scope}
+    % Polymer beads
+    \foreach \x/\y in {0/0,1/.1,2/.2,3/.2,4/.3,5/.2,6/.2,7/.1,8/.2}
+        \draw[black,fill=white] (\x,\y) circle (5mm);
+    % Polymer beads
+    \foreach \x/\y in {0/0,1/.2,2/.2,3/.1,4/0,5/-.1,6/.0,7/.1,8/.2}
+        \draw[black,fill=white] (.5+\x,2+\y) circle (5mm);
+    % Polymer beads
+    \foreach \x/\y in {0/0,1/.1,2/.2,3/.2,4/.3,5/.2,6/.2,7/.1,8/.2}
+        \draw[black,fill=white] (.1+\x,4+\y) circle (5mm);
+\end{tikzpicture}
