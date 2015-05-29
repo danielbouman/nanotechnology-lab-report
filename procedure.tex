@@ -4,9 +4,9 @@ The basic working of optical contact lithography is illustrated in figure \ref{f
 \begin{figure}[H]
 	\centering
 	\resizebox{0.7\linewidth}{!}{\input{figures/contact-litho}}
-	\caption{Simplified working of contact lithography, with 1. light source, 2. condenser lens(es), 3. glass/quartz plate with mask, 4. photographic resist, 5. substrate. Dashed lines indicate lightrays}
+	\caption{Simplified working of contact lithography, with 1. light source, 2. condenser lens(es), 3. glass/quartz plate with mask, 4. photographic resist, 5. substrate. Dashed lines indicate light ray paths.}
 	\label{fig:contact-litho}
-\end{figure} For this experiment an MJB-3 mask aligner from Karl Suss Microtec with a mercury-vapor lamp was used. However, this particular model is designed for deep ultraviolet (DUV) while the used resist is designed for exposure to the I-line and H-line (365.4~nm and 404.7~nm respectively) of the lamp or near ultraviolet (NUV). To prevent the DUV light from exposing the resist and damaging it, the mask is clamped to a glass plate which blocks light with $\lambda \lesssim 300$~nm.
+\end{figure} For this experiment an MJB-3 mask aligner from Karl Suss Microtec with a mercury-vapor lamp was used. However, this particular model is designed for deep ultraviolet (DUV) while the used resist is designed for exposure to the I-line and H-line (365.4~nm and 404.7~nm respectively) of the Hg lamp or near ultraviolet (NUV). To prevent the DUV light from exposing the resist and damaging it, the mask is clamped to a glass plate which blocks light with $\lambda \lesssim 300$~nm.
 
 
 \section*{Substrate and resist}
@@ -17,35 +17,33 @@ Patterns were written on a series of square cut silicon substrates of approximat
     \begin{subfigure}[t]{0.3\linewidth}
         \centering
         \includegraphics[width=\textwidth]{data/b3d1.jpg}
-        \caption{One minute exposure. Significant underexposure is visible.}
+        \caption{One minute exposure. Significant underexposure visible.}
         \label{fig:b3d1}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.3\linewidth}
         \centering
-        \includegraphics[width=\textwidth]{data/b3a1.jpg}
-        \caption{Two minute exposure. The checkerboard pattern in the lower-right corner is of the same size as the one in figure \ref{fig:b2d1}.\todo[inline]{klopt de label?}}
-        \label{fig:b3a1}
+        \includegraphics[width=\textwidth]{data/b3e1.jpg}
+        \caption{2.5 minutes exposure. Slight overexposure.}
+        \label{fig:b3e1}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.3\linewidth}
         \centering
-        \includegraphics[width=\textwidth]{data/b3e1.jpg}
-        \caption{2.5 minutes exposure. Slight overexposure at the vertices of the squares.}
-        \label{fig:b3e1}
+        \includegraphics[width=\textwidth]{data/b3a1.jpg}
+        \caption{Two minute exposure. The checkerboard pattern in the lower-right corner is of the same size as the one in sub figure \subref{fig:b3d1}.}
+        \label{fig:b3a1}
     \end{subfigure}
-    \hfill
-    % \rule{\linewidth}{3cm}
     \caption{Positive tone resist with different exposure times.}
 \end{figure*}
 
 \subsection*{Positive resist}
-As a positive tone resist, AZ~5214 E is used. To promote adhesion to the Si substrate, HMDS (hexamethyldisilazane) is applied first as a primer. The primer is deposited by hand on top of a silicon wafer and spun at 4000 RPM, it is then baked on a hot plate at 200$^{\circ}$~C for two minutes. The resist is spun at the same speed as the primer, which should result in a layer thickness of $1.40 \mu$m. The resist is baked on a hot plate at 90~$^{\circ}$C for one minute.
+As a positive tone resist, AZ~5214 E is used. To promote adhesion to the Si substrate, HMDS (hexamethyldisilazane) is applied first as a primer. The primer is deposited by hand on top of a silicon wafer and spun at 4000 RPM, it is then baked on a hot plate at 200$^{\circ}$~C for two minutes. The resist is spun at the same speed as the primer, which should result in a layer thickness of $1.40~\mu$m. The resist is baked on a hot plate at 90~$^{\circ}$C for one minute.
 
-After the resist is deposited, the sample is exposed in the mask aligner for 1, 2, 2.5, 3, 3.5, and 4 minutes. After exposure the sample is developed for 60 seconds in MF-321 \footnote{MF-321 developer is mainly composed of water and tetramethylammonium hydroxide, it is produced by Microposit.} after which development is stopped by rinsing the sample another 60 seconds in purified water.
+After the resist is deposited, the sample is exposed in the mask aligner for 1, 2, 2.5, 3, 3.5, and 4 minutes. After exposure the sample is developed for 60 seconds in MF-321\footnote{MF-321 developer is mainly composed of water and tetramethylammonium hydroxide and is produced by Microposit.} after which development is stopped by rinsing the sample another 60 seconds in purified water.
 
 \subsection*{Negative resist}
 AZ~5214 E contains a special cross-linking agent which becomes active at temperatures above 110$^{\circ}$~C where the resist has been exposed. The cross-linking agent causes the individual molecules to bond, creating an almost insoluble, non-photoreactive substance. This allows the AZ~5214 E to also be used as a negative resist.
 
-Using the same mask as for the positive exposure, the sample is illuminated for a period of 0.1, 0.2, 0.3, 0.5, 1 and 1.5 minutes. After this first illumination the sample is baked in an oven at 120~$^\circ$C for 42 seconds. During this time cross-links are formed in the resist that was exposed during the first illumination. During baking the sample lies on an aluminium slab inside the oven, this prevents a large decrease in temperature when the oven door is opened and ensures good heat transfer to the sample. After baking, the entire sample is exposed (flood exposure) for a period of either 3 or 4 minutes. During this time the areas of the resist that are not cross-linked are cut up into smaller chains. When the sample is submerged in the MF-321 (again for 60 seconds), these smaller chains are dissolved. After development, the sample is rinsed with purified water as was done with the positive resist samples\cite{productdatasheet}.
+Using the same mask as for the positive exposure, the sample is illuminated for a period of 0.1, 0.2, 0.3, 0.5, 1 and 1.5 minutes. After this first illumination the sample is baked in an oven at 120~$^\circ$C for 42 seconds. During this time cross-links are formed in the resist that was exposed during the first illumination. During baking the sample lies on an aluminium slab inside the oven, this prevents a large decrease in temperature when the oven door is opened and ensures good heat transfer to the sample. After baking, the entire sample is exposed (flood exposure) for a period of either 3 or 4 minutes. During this time the areas of the resist that are not cross-linked are cut up into smaller chains. When the sample is submerged in the MF-321 (again for 60 seconds), these smaller chains are dissolved. After development, the sample is rinsed with purified water as was done with the positive resist samples\cite{az5214}.
 
