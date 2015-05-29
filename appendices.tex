@@ -1,284 +1,284 @@
 % !TeX root = main.tex
-\section{Lithography design}
-\begin{Figure}
+\section{Mask design}
+\begin{figure}[H]
     \centering
     \includegraphics[trim=0mm 0.12mm 0.17mm 0mm, clip=true,width=\linewidth]{figures/litho_design.pdf}
     \captionof{figure}{Used lithography design}
-    \label{fig:distancea10}
-\end{Figure} \todo[inline]{Explain features and perpose of the design}
+    \label{fig:litho_design}
+\end{figure} \todo[inline]{Explain features and perpose of the design}
 
 Starting from the top left and moving clockwise,
 
 \begin{itemize}
-\item Checkerboard
-\item Single line surround by multiple lines
-\item Outward radiating lines
-\item Internally touching circles
-\item Optical Proximity Correction (OPC)
-\item Slightly non-parallel lines
-\item Kock snowflake
+    \item Checkerboard
+    \item Single line surround by multiple lines
+    \item Outward radiating lines
+    \item Internally touching circles
+    \item Shapes with OPC
+    \item Slightly non-parallel lines
+    \item Koch snowflake
 \end{itemize}
 
 The checkerboard pattern is a widely used pattern in micro- and nanofabrication checkerboard pattern, allowing easy detection of over- and underexposure. The next pattern is a much seen pattern in nanofabrication, and is important for analyzing the effect of interference when multiple lines are close together. The outward radiating lines have the feature that the distance between the lines becomes smaller towards the center, making it possible to see at what length scale the lines are still separable. This principle also holds for the internally touching circles. In the top right there is a square with an (approximate) optical proximity correction (OPC) pattern. The Koch snowflake has (in the idealized case) infinite detail, allowing the comparison between the different length scales of the snowflake to see where the resolution becomes too low to see the details. Note that this version has only five iterations, since infinite detail would be unpractical.
 
-\section{Inspection images}
-\todo[inline]{Optical microscope images of mask}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_50_44.jpg}}
-	\caption{Mask}
-	\label{fig:TS_05_20_13_50_44}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_51_16.jpg}}
-	\caption{Mask}
-	\label{fig:TS_05_20_13_51_16}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_51_30.jpg}}
-	\caption{Mask}
-	\label{fig:TS_05_20_13_51_30}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_52_44.jpg}}
-	\caption{Mask}
-	\label{fig:TS_05_20_13_52_44}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_53_38.jpg}}
-	\caption{Mask}
-	\label{fig:TS_05_20_13_53_38}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_54_28.jpg}}
-	\caption{Mask}
-	\label{fig:TS_05_20_13_54_28}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_54_51.jpg}}
-	\caption{Mask}
-	\label{fig:TS_05_20_13_54_51}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_55_57.jpg}}
-	\caption{Mask}
-	\label{fig:TS_05_20_13_55_57}
-\end{figure}
+\section{Inspection images}\label{ap:inspec_img}
+% \todo[inline]{Optical microscope images of mask}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_50_44.jpg}}
+% 	\caption{Mask}
+% 	\label{fig:TS_05_20_13_50_44}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_51_16.jpg}}
+% 	\caption{Mask}
+% 	\label{fig:TS_05_20_13_51_16}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_51_30.jpg}}
+% 	\caption{Mask}
+% 	\label{fig:TS_05_20_13_51_30}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_52_44.jpg}}
+% 	\caption{Mask}
+% 	\label{fig:TS_05_20_13_52_44}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_53_38.jpg}}
+% 	\caption{Mask}
+% 	\label{fig:TS_05_20_13_53_38}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_54_28.jpg}}
+% 	\caption{Mask}
+% 	\label{fig:TS_05_20_13_54_28}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_54_51.jpg}}
+% 	\caption{Mask}
+% 	\label{fig:TS_05_20_13_54_51}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/mask/TS_05_20_13_55_57.jpg}}
+% 	\caption{Mask}
+% 	\label{fig:TS_05_20_13_55_57}
+% \end{figure}
 
-\todo[inline]{Optical microscope images of samples}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/b3b1.jpg}}
-	\caption{b3b1}
-	\label{fig:b3b1}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/b3b2.jpg}}
-	\caption{b3b2}
-	\label{fig:b3b2}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/b3b3.jpg}}
-	\caption{b3b3}
-	\label{fig:b3b3}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/b3c1.jpg}}
-	\caption{b3c1}
-	\label{fig:b3c1}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/b3f1.jpg}}
-	\caption{b3f1}
-	\label{fig:b3f1}
-\end{figure}
+% \todo[inline]{Optical microscope images of samples}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/b3b1.jpg}}
+% 	\caption{b3b1}
+% 	\label{fig:b3b1}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/b3b2.jpg}}
+% 	\caption{b3b2}
+% 	\label{fig:b3b2}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/b3b3.jpg}}
+% 	\caption{b3b3}
+% 	\label{fig:b3b3}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/b3c1.jpg}}
+% 	\caption{b3c1}
+% 	\label{fig:b3c1}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/b3f1.jpg}}
+% 	\caption{b3f1}
+% 	\label{fig:b3f1}
+% \end{figure}
 
-\todo[inline]{SEM}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a1_q01.jpg}}
-	\caption{SEM}
-	\label{fig:b2d1_q1}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a2_q02.jpg}}
-	\caption{SEM}
-	\label{fig:b2d2_q2}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a3_q03.jpg}}
-	\caption{SEM}
-	\label{fig:b2d3_q3}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q12.jpg}}
-	\caption{SEM}
-	\label{fig:b2d12_q12}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q13.jpg}}
-	\caption{SEM}
-	\label{fig:b2d13_q13}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q14.jpg}}
-	\caption{SEM}
-	\label{fig:b2d14_q14}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q15.jpg}}
-	\caption{SEM}
-	\label{fig:b2d15_q15}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q16.jpg}}
-	\caption{SEM}
-	\label{fig:b2d16_q16}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q17.jpg}}
-	\caption{SEM}
-	\label{fig:b2d17_q17}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q18.jpg}}
-	\caption{SEM}
-	\label{fig:b2d18_q18}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q19.jpg}}
-	\caption{SEM}
-	\label{fig:b2d19_q19}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q20.jpg}}
-	\caption{SEM}
-	\label{fig:b2d20_q20}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q21.jpg}}
-	\caption{SEM}
-	\label{fig:b2d21_q21}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d22_q22.jpg}}
-	\caption{SEM}
-	\label{fig:b2d22_q22}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d23_q23.jpg}}
-	\caption{SEM}
-	\label{fig:b2d23_q23}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d24_q24.jpg}}
-	\caption{SEM}
-	\label{fig:b2d24_q24}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d25_q25.jpg}}
-	\caption{SEM}
-	\label{fig:b2d25_q25}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d30_q30.jpg}}
-	\caption{SEM}
-	\label{fig:b2d30_q30}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d31_q31.jpg}}
-	\caption{SEM}
-	\label{fig:b2d31_q31}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d31_q32.jpg}}
-	\caption{SEM}
-	\label{fig:b2d31_q32}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d33_q33.jpg}}
-	\caption{SEM}
-	\label{fig:b2d33_q33}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d33_q34.jpg}}
-	\caption{SEM}
-	\label{fig:b2d33_q34}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d33_q35.jpg}}
-	\caption{SEM}
-	\label{fig:b2d33_q35}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d36_q36.jpg}}
-	\caption{SEM}
-	\label{fig:b2d36_q36}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d36_q37.jpg}}
-	\caption{SEM}
-	\label{fig:b2d36_q37}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d38_q38.jpg}}
-	\caption{SEM}
-	\label{fig:b2d38_q38}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d39_q39.jpg}}
-	\caption{SEM}
-	\label{fig:b2d39_q39}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d40_q40.jpg}}
-	\caption{SEM}
-	\label{fig:b2d40_q40}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d41_q41.jpg}}
-	\caption{SEM}
-	\label{fig:b2d41_q41}
-\end{figure}
+% \todo[inline]{SEM}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a1_q01.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d1_q1}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a2_q02.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d2_q2}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a3_q03.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d3_q3}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q12.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d12_q12}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q13.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d13_q13}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q14.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d14_q14}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q15.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d15_q15}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q16.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d16_q16}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q17.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d17_q17}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q18.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d18_q18}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q19.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d19_q19}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q20.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d20_q20}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q21.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d21_q21}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d22_q22.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d22_q22}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d23_q23.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d23_q23}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d24_q24.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d24_q24}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d25_q25.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d25_q25}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d30_q30.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d30_q30}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d31_q31.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d31_q31}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d31_q32.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d31_q32}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d33_q33.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d33_q33}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d33_q34.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d33_q34}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d33_q35.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d33_q35}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d36_q36.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d36_q36}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d36_q37.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d36_q37}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d38_q38.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d38_q38}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d39_q39.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d39_q39}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d40_q40.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d40_q40}
+% \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d41_q41.jpg}}
+% 	\caption{SEM}
+% 	\label{fig:b2d41_q41}
+% \end{figure}
 
 %\begin{figure}[H]
 %	\centering
