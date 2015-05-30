@@ -36,14 +36,14 @@
     \begin{subfigure}[t]{0.3\linewidth}
         \centering
         \includegraphics[width=\textwidth]{data/b2d1.jpg}
-	    \caption{$\tau = 0.5$~min. Too much resist is removed (grey areas) as a result of overexposure.}
+	    \caption{$\tau = 0.5$~min. Too much resist is cross-linked (grey areas) as a result of overexposure.}
 	    \label{fig:b2d1}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.3\linewidth}
         \centering
         \includegraphics[width=\textwidth]{data/b2h1.jpg}
-	    \caption{$\tau = 0.2$~min. Too little resist is removed as the sample is underexposed.}
+	    \caption{$\tau = 0.2$~min. Too little resist is cross-linked as the sample is underexposed.}
 	    \label{fig:b2h1}
     \end{subfigure}
     \hfill
@@ -54,6 +54,7 @@
 	    \label{fig:b2i1}
     \end{subfigure}
     \caption{Negative tone resist with different exposure times.}
+    \label{fig:optical-neg}
 \end{figure*}
 
 The mask was made with a variety of shapes in different sizes, including but not limited to, checkerboards, outward radiating lines and shapes with optical proximity correction (OPC). The complete design is shown in figure \ref{fig:litho_design}. In this section only the checkerboard shapes are discussed as the other shapes did not contribute to more insight. A more complete overview of microscope images of the designed shapes can be found in appendix \ref{ap:inspec_img}.
@@ -62,11 +63,11 @@ To find the optimal exposure time $\tau$, the checkerboard pattern of each sampl
 
 Images of the checkerboard patterns on the positive tone sample with an exposure time of 2 minutes were taken with a Hitachi S4800 scanning electron microscope. On the largest checkerboard (figure \ref{fig:b2d5_q5}) the exposure time appears to be just right. When looking at the smaller checkerboards however, the effects of overexposure become apparent (figure \ref{fig:b2d7_q7}-\subref{fig:b2d10_q11}). The bright areas around the pattern boundaries is due to the ``edge effect'', which is a result of more secondary electrons leaving the sample at the edges.
 
+The negative tone has two exposure times that are varied, the initial exposure $\tau_1$ for the cross-linking and the flood exposure $\tau_2$. The first three samples were done with $\tau_2 = 3$~minutes. During the analysis of these samples it was found that the quality of the samples fluctuated, and that longer exposure times were required, thus $\tau_2 = 4$~minutes was used for the remaining samples.
 
-% ================== Checked up to here ===============
-It was found that for the negative tone resist an exposure time of 0.1 min. resulted in no pattern creation at all, while exposure times of 0.5 minutes and longer resulted in overexposure (figure \ref{fig:b2d1}). An exposure time of 0.2 min. resulted in underexposure (figure \ref{fig:b2h1}) and while $\tau = 0.3$~min. also underexposed the sample, it was the best result of the negative tone samples ???
+It was found that for the negative tone resist an exposure time of 0.1 min. resulted in no pattern creation at all, while exposure times of 0.5 minutes and longer resulted in overexposure (figure \ref{fig:b2d1}). While an exposure time of 0.2 or 0.3 min. resulted in underexposure (figure \ref{fig:b2h1} and \ref{fig:b2i1} respectively). The 
 
-The results of the developed samples with exposure times between 0.1 and 0.5 minutes are shown in figures \ref{fig:b2d1}, \ref{fig:b2h1} and \ref{fig:b2i1}.
+% ================== Daniel checked up to here ===============
 
 From this we conclude that when using image reversal with the AZ~5214~E an exposure time of around 0.4 minutes will be optimal for lithography. Images of the checkerboard pattern of the sample with an exposure time of 0.5 minutes under the Hitachi S4800 SEM can be seen in figures \ref{fig:b2d26_q26}-\ref{fig:b2d29_q29}. The effects of underexposure become already apparent at a length scale of $\sim$40$\mu$m. 
 
@@ -75,30 +76,31 @@ From this we conclude that when using image reversal with the AZ~5214~E an expos
     \begin{subfigure}[t]{0.24\linewidth}
     	\centering
     	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d26_q26.jpg}}
-    	\caption{SEM. Scale bar is 100~$\mu$m}
+    	\caption{Largest checkerboard. Scale bar is 100~$\mu$m}
     	\label{fig:b2d26_q26}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.24\linewidth}
     	\centering
     	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d27_q27.jpg}}
-    	\caption{SEM. Scale bar is 40~$\mu$m}
+    	\caption{Largest checkerboard. Scale bar is 40~$\mu$m}
     	\label{fig:b2d27_q27}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.24\linewidth}
     	\centering
     	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d28_q28.jpg}}
-    	\caption{SEM. Scale bar is 50~$\mu$m}
+    	\caption{Second largest checkerboard. Scale bar is 50~$\mu$m}
     	\label{fig:b2d28_q28}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.24\linewidth}
     	\centering
     	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b2d29_q29.jpg}}
-    	\caption{SEM. Scale bar is 20~$\mu$m}
+    	\caption{Second largest checkerboard. Scale bar is 20~$\mu$m}
     	\label{fig:b2d29_q29}
     \end{subfigure}
+    \caption{SEM images of the two largest checkerboard patterns on the negative tone sample (inverse version of the patterns shown in figure \ref{fig:optical-neg}). $\tau_1 = 0.5$~min, $\tau_2 = 4$~min.}
 \end{figure*}
 
 
@@ -141,5 +143,6 @@ The samples were also analyzed under a profilometer.
 \end{table}
 
 It is clear from the table that the positive sample with an exposure time of  1 minute and the negative sample with an exposure time of 0.1 minutes almost had no activation of the photosensitive resist. No significant overcut was detected under the profilometer for the positive samples. The possible presence of undercut was not measured for the negative samples.
-The first three samples received a flood exposure of 3 minutes. During the analysis of these samples it was found that the quality of the samples fluctuated, and that in general longer exposure times were required. These samples were thus discarded.
+
+
 Other parameters of the recipe also influence the obtainable resolution. However, unless the parameters deviate significantly from standard values, the obtainable resolution will depend primarily on the exposure time. Some samples turned out to be of inferior quality because they were created on recycled substrates. This combined with the limited time available resulted in not accurately finding good parameters for a recipe for both the positive and, especially, the negative tone resist. Possible further experiments could be done to further narrow down the optimal exposure time and to analyze the maximum required development time.
