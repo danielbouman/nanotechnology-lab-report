@@ -1,41 +1,44 @@
 % !TeX root = main.tex
 \section*{Lithographic system}
+The basic working of optical contact lithography is illustrated in figure \ref{fig:contact-litho}.
 \begin{figure}[H]
 	\centering
 	\resizebox{0.7\linewidth}{!}{\input{figures/contact-litho}}
 	\caption{Simplified working of contact lithography, with 1. light source, 2. condenser lens(es), 3. glass/quartz plate with mask, 4. photographic resist, 5. substrate. Dashed lines indicate light ray paths.}
 	\label{fig:contact-litho}
 \end{figure}
-The basic working of optical contact lithography is illustrated in figure \ref{fig:contact-litho}. Light emitted from a source is collimated using a condenser lens (or an array of lenses). The collimated light travels through the transparent parts of the mask and illuminates the resist areas directly below these areas. For this experiment an MJB-3 mask aligner from Karl Suss Microtec with a mercury-vapor lamp was used. However, this particular model is designed for deep ultraviolet (DUV) while the used resist is designed for exposure to the I-line and H-line (365.4~nm and 404.7~nm respectively) of the Hg lamp or near ultraviolet (NUV). To prevent the DUV light from exposing the resist and damaging it, the mask is clamped to a glass plate which blocks light with $\lambda \lesssim 300$~nm.
-
+            \begin{figure*}[!b]
+                \centering
+                \begin{subfigure}[t]{0.3\linewidth}
+                    \centering
+                    \includegraphics[width=\textwidth]{data/b3d1.jpg}
+                    \caption{$\tau = 1$~min. Significant underexposure visible.}
+                    \label{fig:b3d1}
+                \end{subfigure}
+                \hfill
+                \begin{subfigure}[t]{0.3\linewidth}
+                    \centering
+                    \includegraphics[width=\textwidth]{data/b3e1.jpg}
+                    \caption{$\tau = 2.5$~min. Slight overexposure.}
+                    \label{fig:b3e1}
+                \end{subfigure}
+                \hfill
+                \begin{subfigure}[t]{0.3\linewidth}
+                    \centering
+                    \includegraphics[width=\textwidth]{data/b3a1.jpg}
+                    \caption{$\tau = 2$~min. The checkerboard pattern in the lower-right corner is of the same size as the one in sub figure \subref{fig:b3d1}.}
+                    \label{fig:b3a1}
+                \end{subfigure}
+                \caption{Positive tone resist with different exposure times.}
+            \end{figure*}
+Light emitted from a source is collimated using a condenser lens (or an array of lenses). The collimated light travels through the transparent parts of the mask and illuminates the resist areas directly below these areas. For this experiment an MJB-3 mask aligner from Karl Suss Microtec with a mercury-vapor lamp was used. However, this particular model is designed for deep ultraviolet (DUV) while the used resist is designed for exposure to the I-line and H-line (365.4~nm and 404.7~nm respectively) of the Hg lamp or near ultraviolet (NUV). To prevent the DUV light from exposing the resist and damaging it, the mask is clamped to a glass plate which blocks light with $\lambda \lesssim 300$~nm. The minimal feature size (MFS) is given by
+\begin{equation*}
+    \text{MFS} = k\sqrt{\lambda \frac{z}{2}},
+\end{equation*} where $k$ is the process constant ($\sim$1.5), $\lambda$ the wavelength of the light source and $z$ the resist thickness. Assuming that the I-line is of most influence and a resist thickness of 1.6~$\mu$m, MFS = 0.81~$\mu$m.
 
 \section*{Substrate and resist}
 Patterns were written on a series of square cut silicon substrates of approximately 15 mm by 15 mm. For both the negative and positive tone samples, AZ~5214~E\footnote{AZ~5214~E is a high resolution image reversal resist produced by MicroChemicals} is used as photoresist. Since the optics of the MJB-3 is designed for DUV light, much intensity of the NUV is absorbed. Thus the exposure times of standard recipes designed by the Kavli Nanolab facility are not sufficient. The recipes are modified to accommodate the decrease in light intensity. Some initial guessing was needed and different exposure times are  investigated.
 
-\begin{figure*}[!b]
-    \centering
-    \begin{subfigure}[t]{0.3\linewidth}
-        \centering
-        \includegraphics[width=\textwidth]{data/b3d1.jpg}
-        \caption{$\tau = 1$~min. Significant underexposure visible.}
-        \label{fig:b3d1}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[t]{0.3\linewidth}
-        \centering
-        \includegraphics[width=\textwidth]{data/b3e1.jpg}
-        \caption{$\tau = 2.5$~min. Slight overexposure.}
-        \label{fig:b3e1}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[t]{0.3\linewidth}
-        \centering
-        \includegraphics[width=\textwidth]{data/b3a1.jpg}
-        \caption{$\tau = 2$~min. The checkerboard pattern in the lower-right corner is of the same size as the one in sub figure \subref{fig:b3d1}.}
-        \label{fig:b3a1}
-    \end{subfigure}
-    \caption{Positive tone resist with different exposure times.}
-\end{figure*}
 
 \subsection*{Positive resist}
 As a positive tone resist, AZ~5214~E is used. To promote adhesion to the Si substrate, HMDS (hexamethyldisilazane) is applied first as a primer. The primer is deposited by hand on top of a silicon wafer and spun at 4000 RPM, it is then baked on a hot plate at 200$^{\circ}$~C for two minutes. The resist is spun at the same speed as the primer, which should result in a layer thickness of $1.40~\mu$m. The resist is baked on a hot plate at 90~$^{\circ}$C for one minute.
