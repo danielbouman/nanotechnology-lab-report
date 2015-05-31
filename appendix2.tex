@@ -1,30 +1,7 @@
-% !TeX root = main.tex
-\section{Mask design}
-\begin{figure}[H]
-    \centering
-    \includegraphics[trim=0mm 0.12mm 0.17mm 0mm, clip=true,width=\linewidth]{figures/litho_design.pdf}
-    \captionof{figure}{Used lithography design}
-    \label{fig:litho_design}
-\end{figure}
-
-The design for the mask was made to enable easy detection of the attained resolution with certain patterns. This was done by taking patterns specifically designed to test the resolution and/or by taking patterns that are common in the semiconductor industry. Starting from the top left and moving clockwise,
-
-\begin{itemize}
-    \item Checkerboard
-    \item Single line surround by multiple lines
-    \item Outward radiating lines
-    \item Internally touching circles
-    \item Shapes with OPC
-    \item Slightly non-parallel lines
-    \item Koch snowflake
-\end{itemize}
-
-The checkerboard pattern is a widely used pattern in micro- and nanofabrication checkerboard pattern, allowing easy detection of over- and underexposure. The next pattern is a much seen pattern in nanofabrication, and is important for analyzing the effect of interference when multiple lines are close together. The outward radiating lines have the feature that the distance between the lines becomes smaller towards the center, making it possible to see at what length scale the lines are still separable. This principle also holds for the internally touching circles. In the top right there is a square with an (approximate) optical proximity correction (OPC) pattern. The Koch snowflake has (in the idealized case) infinite detail, allowing the comparison between the different length scales of the snowflake to see where the resolution becomes too low to see the details. Note that this version has only five iterations, since infinite detail would be unpractical.
-
 \section{Inspection images}\label{ap:inspec_img}
- \todo[inline]{ik krijg de titel niet op dezelfde pagina als de plaatjes..}
+%  \todo[inline]{ik krijg de titel niet op dezelfde pagina als de plaatjes..}
  % \todo[inline]{Optical microscope images of mask}
- \begin{figure*}[!t]
+ \begin{figure*}[htb]
      \centering
      \begin{subfigure}[t]{0.24\linewidth}
      	\centering
@@ -56,7 +33,7 @@ The checkerboard pattern is a widely used pattern in micro- and nanofabrication 
  \end{figure*}
 
 
- \begin{figure*}[!t]
+ \begin{figure*}[htb]
      \centering
      \begin{subfigure}[t]{0.24\linewidth}
   	\centering
@@ -90,7 +67,7 @@ The checkerboard pattern is a widely used pattern in micro- and nanofabrication 
 
 
 
- \begin{figure*}[!t]
+ \begin{figure*}[htb]
      \centering
      \begin{subfigure}[t]{0.32\linewidth}
  	\resizebox{\linewidth}{!}{\includegraphics{data/b3d1.jpg}}
@@ -176,7 +153,7 @@ The checkerboard pattern is a widely used pattern in micro- and nanofabrication 
 
 
  % \todo[inline]{SEM}
- \begin{figure*}[!t]
+ \begin{figure*}[htb]
      \centering
      \begin{subfigure}[t]{0.32\linewidth}
   	\centering
@@ -229,7 +206,7 @@ The checkerboard pattern is a widely used pattern in micro- and nanofabrication 
   	\resizebox{\linewidth}{!}{\includegraphics{data/sem/b3a11_q15.jpg}}
   	\caption{Structure size of $\sim$1.5 $\mu$m. The rounding of the corners has become more pronounced.}
   	\label{fig:b2d15_q15}
-   \end{subfigure}
+  \end{subfigure}
  \hfill
      \begin{subfigure}[t]{0.24\linewidth}
   	\centering
@@ -240,7 +217,7 @@ The checkerboard pattern is a widely used pattern in micro- and nanofabrication 
 \caption{Single line surrounded by multiple lines for positive tone. For the structure size the width of the line is taken as guideline.}
  \end{figure*}
 
- \begin{figure*}[!t]
+ \begin{figure*}[htb]
      \centering
 %     \begin{subfigure}[t]{0.24\linewidth}
 %  	\centering
@@ -286,7 +263,7 @@ The checkerboard pattern is a widely used pattern in micro- and nanofabrication 
 
 
 
- \begin{figure*}[!t]
+ \begin{figure*}[htb]
      \centering
      \begin{subfigure}[t]{0.24\linewidth}
   	\centering
@@ -318,7 +295,7 @@ The checkerboard pattern is a widely used pattern in micro- and nanofabrication 
 \caption{Outward radiating lines pattern for negative tone. For the structure size the width of the line at the edge of the pattern is taken as guideline.}
  \end{figure*}
 
- \begin{figure*}[!t]
+ \begin{figure*}[htb]
      \centering
      \begin{subfigure}[t]{0.24\linewidth}
   	\centering
@@ -352,7 +329,7 @@ The checkerboard pattern is a widely used pattern in micro- and nanofabrication 
 
 
 
- \begin{figure*}[!t]
+ \begin{figure*}[htb]
      \centering
 %     \begin{subfigure}[t]{0.24\linewidth}
 %  	\centering
